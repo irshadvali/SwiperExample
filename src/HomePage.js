@@ -6,7 +6,36 @@ import Swiper from "../src/core_component/Swiper";
 class HomePage extends Component {
   render() {
     return (
-      <Swiper style={styles.wrapper} showsButtons={false}>
+      <Swiper
+        style={styles.wrapper}
+        height={240}
+        showsButtons={false}
+        autoplay={true}
+        dot={
+          <View
+            style={{
+              backgroundColor: "rgba(255,255,255,.3)",
+              width: 13,
+              height: 13,
+              borderRadius: 7,
+              marginLeft: 7,
+              marginRight: 7
+            }}
+          />
+        }
+        activeDot={
+          <View
+            style={{
+              backgroundColor: "#1234EF",
+              width: 13,
+              height: 13,
+              borderRadius: 7,
+              marginLeft: 7,
+              marginRight: 7
+            }}
+          />
+        }
+      >
         <View style={styles.slide1}>
           <Text style={styles.text}>Hello Swiper</Text>
         </View>
