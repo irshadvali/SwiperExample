@@ -6,7 +6,7 @@
 
 import React, { Component } from "react";
 import { Platform, StyleSheet, Text, View } from "react-native";
-import ImageShow from "./src/ImageShow";
+import SwiperNumber from "./src/SwiperNumber";
 
 const instructions = Platform.select({
   ios: "Press Cmd+R to reload,\n" + "Cmd+D or shake for dev menu",
@@ -17,7 +17,7 @@ const instructions = Platform.select({
 
 export default class App extends Component {
   render() {
-    return <ImageShow />;
+    return <SwiperNumber />;
   }
 }
 
